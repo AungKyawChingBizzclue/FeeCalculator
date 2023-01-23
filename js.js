@@ -1,9 +1,8 @@
 function myFunction(){
     let x = document.getElementById("inPut").value;
+    
     let amountOfCashout = Number(x);
     document.getElementById("demo").innerHTML = "Amount Of Cash Out = "+ amountOfCashout;
-
-    console.log(typeof amountOfCashout);
 
     let totalBKashCashOutFee = 1.85 * amountOfCashout /100;
     let totalBKashPrioAgentCashOutFee = 1.5 * amountOfCashout /100;
