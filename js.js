@@ -9,12 +9,16 @@ function myFunction(){
     let totalNagadCashOutFee = 1.149 * amountOfCashout /100;
     let totalBKashToBankFee = 1 * amountOfCashout /100;
     let totalNagadToBankFee = 1.5 * amountOfCashout /100;
+    let totalRocketCashOutFee = 1.67 * amountOfCashout /100;
+    let totalRocketToATMFee = 0.9 * amountOfCashout /100;
 
-    let totalCostOfBKashCashOut=totalBKashCashOutFee + amountOfCashout ;
-    let totalCostOfBKashPrioAgentCashOut=totalBKashPrioAgentCashOutFee+amountOfCashout;
-    let totalCostOfNagadCashOut=totalNagadCashOutFee+amountOfCashout;
-    let totalCostOfBkashToBank=totalBKashToBankFee+amountOfCashout;
-    let totalCostOfNagadToBank=totalNagadToBankFee+amountOfCashout;
+    let totalCostOfBKashCashOut = totalBKashCashOutFee + amountOfCashout ;
+    let totalCostOfBKashPrioAgentCashOut = totalBKashPrioAgentCashOutFee + amountOfCashout;
+    let totalCostOfNagadCashOut = totalNagadCashOutFee + amountOfCashout;
+    let totalCostOfBkashToBank = totalBKashToBankFee + amountOfCashout;
+    let totalCostOfNagadToBank = totalNagadToBankFee + amountOfCashout;
+    let totalCostOfRocketCashOut = totalRocketCashOutFee + amountOfCashout;
+    let totalCostOfRocketToATM = totalRocketToATMFee + amountOfCashout;
 
     document.getElementById("BAF").innerHTML = totalBKashCashOutFee;
     document.getElementById("BAC").innerHTML = totalCostOfBKashCashOut;
@@ -26,6 +30,8 @@ function myFunction(){
     document.getElementById("BBC").innerHTML = totalCostOfBkashToBank;
     document.getElementById("NBF").innerHTML = totalNagadToBankFee;
     document.getElementById("NBC").innerHTML = totalCostOfNagadToBank;
+    document.getElementById("RAF").innerHTML = totalRocketCashOutFee;
+    document.getElementById("RAC").innerHTML = totalCostOfRocketCashOut;
+    document.getElementById("RBF").innerHTML = totalRocketToATMFee;
+    document.getElementById("RBC").innerHTML = totalCostOfRocketToATM;
 }
-
-
